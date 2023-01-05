@@ -1,0 +1,97 @@
+/* pages/teacherscanask/teacherscanask.wxss */
+@import "/pages/teacherscansign/teacherscansign.wxss";
+page{
+  background: #f6f6f6;
+}
+.scan {
+  font-size: 32rpx;
+  overflow: hidden;
+  margin: 30rpx 10rpx 0 10rpx;
+}
+
+text {
+  display: block;
+  float: left;
+}
+
+.scantitle {
+  overflow: hidden;
+   border-bottom: 1rpx solid #f1f1f1;
+}
+
+.scantitle text {
+  font-size: 34rpx;
+  text-align: center;
+}
+
+.studentname {
+  width: 140rpx;
+}
+
+.studentcollege {
+  width: 250rpx;
+}
+
+.studentmagor {
+  width: 130rpx;
+}
+
+.studentclass {
+  width: 180rpx;
+}
+
+.studentoperation {
+  width: 160rpx;
+  text-align: center;
+  overflow: hidden;
+}
+.scanlisttiem{
+  border-bottom: 1rpx solid #aaa;
+}
+.scanlisttiem text {
+  font-size: 32rpx;
+  text-align: center;
+  margin-top: 10rpx;
+}
+
+.leaveagreen {
+  display: block;
+  float: right;
+  width: 70rpx;
+  color: #600eba;
+}
+
+.leavedetail {
+  display: block;
+  float: right;
+  margin-top: 10rpx;
+  width: 70rpx;
+  color: green;
+}
+
+.scantype {
+  position: fixed;
+  bottom: 0;
+  height: 70rpx;
+  width: 100%;
+  padding-top: 20rpx;
+  padding-left: 40rpx;
+  background: #aaa;
+}
+.scantype text{
+  display: block;
+  width: 180rpx;
+  float: left;
+  text-align: center;
+  margin-right:20rpx;
+}
+.selcetscantype{
+  font-weight: bold;
+}
+.matchfriendimg{
+  display: block;
+  float: left;
+  padding-top:9rpx;
+  width: 34rpx;
+  height: 34rpx;
+}

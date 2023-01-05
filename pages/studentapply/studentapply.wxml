@@ -1,0 +1,50 @@
+<!--pages/sutdentapply/sutdentapply.wxml-->
+<view class='mathFrend' bindtap='mathFriend'>
+  <image src='/image/matchfriend.png' mode='scaleToFill' class='matchfriendimg'></image>
+  <text>兴趣交友</text>
+</view>
+<view class='apply'>
+  <scroll-view scroll-y='true'>
+    <block wx:for="{{applylist}}">
+      <view class='applylist'>
+        <view class='applylisttitle'>
+          <!-- <text class='applyid'>{{item.id}}</text> -->
+          <text class='applyid'>{{index+1}}</text>
+
+          <block wx:if="{{item.type==1}}">
+            <text class='applytype'>留校</text>
+          </block>
+          <block wx:else>
+            <text class='applytype'>请假</text>
+          </block>
+
+          <block wx:if="{{item.isRead==1}}">
+            <text class='applystate'>已审批</text>
+          </block>
+          <block wx:else>
+            <text class='applystate applystate2'>待审批</text>
+          </block>
+
+        </view>
+        <text class='applytext'>{{item.content}}</text>
+        <view class='applyoperation'>
+          <text class='applytime'>{{item.createTime}}</text>
+          <text class='applydelete' bindtap='deteleApply' data-applyid='{{item.id}}' data-applytype='{{item.applyType}}' data-index='{{index}}'>删除</text>
+          <!--参数传递-->
+          <navigator class='applymodify' url='../studentapplyoperation/studentapplyoperation?applyid={{item.id}}'>修改</navigator>
+        </view>
+      </view>
+    </block>
+
+  </scroll-view>
+
+
+</view>
+  <view class='applyscan'>
+    <image src='/image/changinfo.png' mode='scaleToFill' class='matchfriendimg1'></image>
+    <text class='applyscanitem' bindtap='addApply'>添加申请信息</text>
+    <image src='/image/matchmmessage.png' mode='scaleToFill' class='matchfriendimg1'></image>
+    <text class='applyscanitem' bindtap='houseMasterSendScan'>查看公寓公告</text>
+    <image src='/image/local.png' mode='scaleToFill' class='matchfriendimg1'></image>
+    <text class='applyscanitem' bindtap='studentLogin'>今日学生签到</text>
+  </view>

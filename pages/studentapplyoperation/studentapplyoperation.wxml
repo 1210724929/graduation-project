@@ -1,0 +1,23 @@
+<!--pages/studentapplyoperation/studentapplyoperation.wxml-->
+<view class='operation'>
+  <form bindsubmit='formSubmit' bindreset='formReset'>
+    <view class='row'>
+      <text class='applytype'>类型：</text>
+      <radio-group class="group" bindchange="radioChange" name="type">
+        <view class="group-label">
+          <radio value="0" checked="true">请假</radio>   
+        </view>
+        <view class="group-label">
+          <radio value="1" >留校</radio>   
+        </view>
+      </radio-group>
+      <input  class='applytype3'  name="studentId" value='{{userLoginId}}' disabled="true"></input>
+      <input  class='applytype3'  name="id" value='{{id}}' disabled="true"></input>
+    </view>
+    <textarea type='text' class='applytext' value='{{applylist.content}}' placeholder='信息' name="content"></textarea>
+    <view class='row'>
+      <button type='primary' form-type='submit'>提交</button>
+      <button type='primary' form-type='reset'>清空</button>
+    </view>
+  </form>
+</view>

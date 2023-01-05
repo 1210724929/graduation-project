@@ -1,0 +1,59 @@
+<!--login.wxml-->
+<view>
+  <form  bindsubmit='loginIn'>
+  <view class="userinfo">
+    <open-data type="userAvatarUrl" class="userinfo-avatar"></open-data>
+    <open-data type="userNickName" lang="zh_CN"></open-data>
+  </view>
+
+    <view class="flex-list">
+      <view class="flex-item">
+        <label class="label1">账号：</label>
+        <input class="use_input" name="use_accont" placeholder="请输入学号或者电话号码" bindblur='accountCheck'></input>
+      </view>
+      <view class="flex-item">
+        <label class="label1">密码：</label>
+        <input class="use_input" name="use_password" placeholder="请输入密码" password></input>
+      </view>
+    </view>
+    <view>
+      <radio-group class="group" bindchange="radioChange" name="type">
+        <view class="group-label">
+          <radio value="0" checked="true">student</radio>   
+        </view>
+        <view class="group-label">
+          <radio value="1" >teacher</radio>   
+        </view>
+         <view class="group-label">
+          <radio value="2" >houser</radio>   
+        </view>
+      </radio-group>
+    </view>
+
+    <view class="group-label">
+      <checkbox>
+        <view>
+          <label>记住密码</label>
+        </view>
+      </checkbox>
+    </view>
+
+
+    <view>
+      <button class="button-sub" type="primary" form-type="submit">登录</button>
+    </view>
+  </form>
+
+  <view class="group">
+    <view class="group-label2">
+      <label>
+        <text bindtap='registerUser'>注册账号</text>
+      </label>
+    </view>
+    <view class='group-label2'>
+      <label>
+        <text>找回密码</text>
+      </label>
+    </view>
+  </view>
+</view>

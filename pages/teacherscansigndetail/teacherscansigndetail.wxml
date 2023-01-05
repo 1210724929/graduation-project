@@ -1,0 +1,23 @@
+<!--pages/teacherscansigndetail/teacherscansigndetail.wxml-->
+<view class='siginList'>
+  <view class='siginTotal'>
+
+    <text>{{singInList.length}}</text>
+    <label>总签到数（次）：</label>
+  </view>
+  <view class='siginListTitle'>
+    <text class='siginTime'>时间</text>
+    <text class='siginAddress'>地点</text>
+    <text class='isSigin'>签到状态</text>
+  </view>
+
+  <block wx:for="{{singInList}}">
+    <view class='siginListItem'>
+      <text class='siginTime'>{{item. createTime}}</text>
+      <text class='siginAddress'>{{item.city}}</text>
+      <block wx:if="{{item.isSignin==1}}">
+        <text class='isSigin isSigin2'>已签到</text>
+      </block> 
+     </view>
+  </block>
+</view>

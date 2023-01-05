@@ -1,0 +1,66 @@
+/* pages/studentapplyoperation/studentapplyoperation.wxss */
+page{
+  background: #f3f3f3;
+  font-size: 35rpx;
+}
+.operation{
+  margin: 20rpx;
+}
+.row{
+  overflow: hidden;
+}
+.applytype{
+  display: block;
+  height: 60rpx;
+  width: 120rpx;
+  float: left;
+  line-height: 60rpx;
+  font-weight:bold;
+}
+.applytype2{
+  display: block;
+  height: 60rpx;
+  width: 160rpx;
+  float: left;
+  line-height: 60rpx;
+  color: green;
+  border: 2rpx dotted green;
+}
+.group{
+  display: flex;
+  flex-direction:row;
+}
+.group-label{
+  font-size: 30rpx;
+  width: 140rpx;
+}
+radio {
+  transform: scale(0.8);
+  border-radius: 3rpx;
+}
+.row input{
+ 
+}
+.applytype3{
+  display: block;
+  width: 0rpx;
+}
+.applytext{
+  width: 680rpx;
+   height: 400rpx;
+  direction: block;
+  margin: 20rpx 15rpx 10rpx 10rpx;
+  font-size: 33rpx;
+  border: 2rpx dotted green;
+  padding-left: 10rpx;
+  padding-top: 10rpx;
+}
+textarea{
+  
+}
+button{
+  float: left;
+  width: 280rpx;
+  margin:20rpx 50rpx 0 20rpx;
+  font-size: 38rpx;
+}

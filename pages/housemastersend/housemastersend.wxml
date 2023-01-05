@@ -1,0 +1,24 @@
+<!--pages/housemastersend/housemastersend.wxml-->
+<view class='apply'>
+  <scroll-view scroll-y='true'>
+    <block wx:for="{{housesendlist}}">
+      <view class='applylist'>
+        <view class='applylisttitle'>
+          <!-- <text class='applyid'>{{item.id}}</text> -->
+          <text class='applyid'>{{index+1}}</text>
+        </view>
+        <text class='applytext'>{{item.content}}</text>
+        <view class='applyoperation'>
+          <text class='applytime'>{{item.createTime}}</text>
+          <text class='applyname'>{{item.name}}</text>
+        </view>
+      </view>
+    </block>
+
+  </scroll-view>
+  <block wx:if="{{housemasterSendType==1}}">
+    <view  class='addsend'>
+    <text bindtap='addSend'>发布公寓公告</text>
+     </view>
+   </block>
+</view>

@@ -1,0 +1,22 @@
+<!--pages/usermatchfriendmessagesend/usermatchfriendmessagesend.wxml-->
+<view class='matchfriendname'>
+  <label bindtap='matchfriend'>← {{getname}}</label>
+</view>
+
+<view class='message'>
+  <block wx:for="{{currentMessageList}}">
+    <view class='messageItem'>
+      <text>{{item.message}}</text>
+    </view>
+  </block>
+
+</view>
+
+<form bindsubmit="sendMessage">
+  <view class='messagesend'>
+    <input name="sendId" value='{{sendnumber}}'></input>
+    <input name="getId" value='{{getnumber}}'></input>
+    <input class='send' name="message" value='写私信'></input>
+    <button class='sendbutton' form-type="submit">发送</button>
+  </view>
+</form>

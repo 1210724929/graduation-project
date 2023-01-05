@@ -1,0 +1,45 @@
+/* pages/usermatchfriendmessagesend/usermatchfriendmessagesend.wxss */
+page{
+  background: #f6f6f6;
+}
+.matchfriendname{
+  margin: 20rpx;
+}
+.message{
+  margin: 20rpx;
+  overflow: hidden;
+}
+.messageItem{
+  float: right;
+  width: 100%;
+  margin-top:15rpx; 
+}
+.messageItem text{
+ display: block; 
+ float: right;
+ color: #41b000;
+ font-size: 32rpx;
+ margin-right:20rpx; 
+}
+.messagesend{
+  position: fixed;
+  bottom: 30rpx;
+  overflow: hidden;
+  font-size: 32rpx;
+  margin-left: 30rpx;
+}
+.send{
+  display: block;
+  float: left;
+  border-bottom:1rpx solid green; 
+  padding-left: 10rpx;
+  padding-bottom: 20rpx;
+  width: 550rpx;
+}
+.sendbutton{
+  display: block;
+  float: right;
+  width: 150rpx;
+  text-align: center;
+ font-size: 32rpx;
+}

@@ -1,0 +1,118 @@
+<!--pages/register/register.wxml-->
+<view>
+  <view class="userinfo">
+    <open-data type="userAvatarUrl" class="userinfo-avatar"></open-data>
+    <open-data type="userNickName" lang="zh_CN"></open-data>
+  </view>
+  <form bindsubmit='register' bindreset='formReset' class='reg-body'>
+    <view class='reg'>
+      <view class='reg-leftlist'>
+        <view class='reg-left'>
+          <label>姓名：</label>
+        </view>
+        <block wx:if="{{studentdisplay}}">
+          <view class='reg-left'>
+            <label>性别：</label>
+          </view>
+
+          <view class='reg-left'>
+            <label>学号：</label>
+          </view>
+        </block>
+        <view class='reg-left'>
+          <label>电话号码：</label>
+        </view>
+        <view class='reg-left'>
+          <label>密码：</label>
+        </view>
+        <!-- <view class='reg-left'>
+          <label>确认密码：</label>
+        </view> -->
+        <view class='reg-left'>
+          <label>身份：</label>
+        </view>
+        <!--
+        <block wx:for="{{regItem}}">
+          <view class='reg-left'>
+            <label>{{item.name}}</label>
+          </view>
+        </block>
+ -->
+        <block wx:if="{{studentdisplay}}">
+          <block wx:for="{{studentItem}}">
+            <view class='reg-left'>
+              <label>{{item.name}}</label>
+            </view>
+          </block>
+        </block>
+
+
+      </view>
+
+
+
+      <view class='reg-rightlist'>
+        <view class='reg-right'>
+          <input class='reg-input' name="name" placeholder='真实姓名'></input>
+        </view>
+        <block wx:if="{{studentdisplay}}">
+          <view class='reg-right'>
+            <radio-group name='sex'>
+              <radio checked='true' value='0'>男</radio>
+              <radio value='1'>女</radio>
+            </radio-group>
+          </view>
+
+          <view class='reg-right'>
+            <input class='reg-input' name="number" placeholder='学生用学号'></input>
+          </view>
+        </block>
+        <view class='reg-right'>
+          <input class='reg-input' name="phone" placeholder='有效电话号码' bindblur='radioChange'></input>
+        </view>
+        <view class='reg-right'>
+          <input class='reg-input' name="password" placeholder='输入密码' password='true'></input>
+        </view>
+        <!-- <view class='reg-right'>
+          <input class='reg-input' placeholder='再次输入' password='true'></input>
+        </view> -->
+        <view class='reg-right'>
+          <picker mode='selector' name="type" value='{{index}}' range='{{array}}' bindchange='bindPickerChange'>
+            <view class='reg-picker'>{{array[index]}}</view>
+          </picker>
+        </view>
+        <block wx:if="{{studentdisplay}}">
+          <view class='reg-right'>
+           <picker moder="selector" value='{{suseCollegeChoose}}' range-key="college" range='{{suseCollegeList}}' bindchange='collegeChoose'>
+        <input class='reg-input' name="college" value='{{suseCollegeList[suseCollegeChoose].college}}'></input>
+      </picker>
+            <!-- <input class='reg-input' name="college" placeholder='计算机学院'></input> -->
+          </view>
+          <view class='reg-right'>
+          <picker moder="selector" value='{{suseMajorChoose}}' range-key="major" range='{{suseMajorList}}' bindchange='majorChoose'>
+        <input class='reg-input' name="major" value='{{suseMajorList[suseMajorChoose].major}}'></input>
+      </picker>
+            <!-- <input class='reg-input' name="major" placeholder='物联网'></input> -->
+          </view>
+          <view class='reg-right'>
+           <picker moder="selector" value='{{suseGradeChoose}}' range='{{suseGradeList}}' bindchange='gradeChoose'>
+        <input class='reg-input' name="grade" value='{{suseGradeList[suseGradeChoose]}}'></input>
+      </picker>
+            <!-- <input class='reg-input' name="grade" placeholder='2015'></input> -->
+          </view>
+          <view class='reg-right'>
+           <picker moder="selector" value='{{suseClassesChoose}}' range='{{suseClassesList}}' bindchange='classesChoose'>
+        <input class='reg-input' name="classes" value='{{suseClassesList[suseClassesChoose]}}'></input>
+      </picker>
+            <!-- <input class='reg-input' name="classes" placeholder='2'></input> -->
+          </view>
+        </block>
+      </view>
+    </view>
+
+    <view class='reg-but'>
+      <button class='reg-but-left' type='primary' form-type='submit'>注册</button>
+      <button class='reg-but-right' type='default' form-type='register'>清除</button>
+    </view>
+  </form>
+</view>

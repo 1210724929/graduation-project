@@ -1,0 +1,96 @@
+/* pages/register/register.wxss */
+@import "/pages/teacherscansign/teacherscansign.wxss";
+page {
+  margin: 0;
+  padding: 0;
+  background: #f3f3f3;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 70rpx;
+  padding-top: 80rpx;
+}
+
+.userinfo-avatar {
+  display: block;
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.reg-body {
+  overflow: hidden;
+  font-size: 30rpx;
+  margin-top: 50rpx;
+}
+
+.reg {
+  float: left;
+  width: 750rpx;
+  align-content: center;
+  text-align: center;
+  margin-top: 50rpx;
+  margin-left: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.reg-leftlist {
+  float: left;
+}
+
+.reg-rightlist {
+  float: right;
+  margin-right: 100rpx;
+}
+
+radio {
+  transform: scale(0.8);
+  border-radius: 3rpx;
+}
+.reg-left {
+  width: 200rpx;
+  height: 50rpx;
+  margin: 40rpx 0rpx 10rpx 20rpx;
+}
+
+.reg-right {
+  width: 400rpx;
+  height: 50rpx;
+  margin: 40rpx 0rpx 20rpx 20rpx;
+  text-align: left;
+}
+
+input {
+  border: 1rpx solid rgba(213, 230, 180, 0.5);
+  font-size: 25rpx;
+  padding-left: 10rpx;
+}
+
+.reg-picker {
+  border: solid 1rpx rgba(213, 230, 180, 0.5);
+  padding-left: 10rpx;
+}
+
+.reg-but {
+  margin: 50rpx 30rpx 20rpx 0rpx;
+  width: 750rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.reg-but-left {
+  width: 250rpx;
+}
+
+.reg-but-right {
+  width: 250rpx;
+}

@@ -1,0 +1,13 @@
+<!--pages/studentsign/studentsign.wxml-->
+<view class='signin'>
+  <text class='map'>获取地理位置签到</text>
+ 
+  <text class='logintime'>时间：{{logintime}}</text>
+  <text class='logintime'>地点：{{loginaddress}}</text>
+   <text class='latitude'>纬度：{{latitude}}</text>
+  <text class='longitude'>经度：{{longitude}}</text>
+  
+  <text class='location' bindtap='getSignIn'>获取地理位置</text>
+  <text class='location signinmap'bindtap='signIn'>确认签到</text>
+</view>
+

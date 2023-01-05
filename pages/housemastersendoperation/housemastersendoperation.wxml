@@ -1,0 +1,11 @@
+<!--pages/housemastersendoperation/housemastersendoperation.wxml-->
+<form bindsubmit='addSend'>
+<view class='housesend'>
+  <textarea class='housermastersend'name='content'></textarea>
+
+  <input name="homemasterId" value='{{userLoginId}}' class='addsendid'disabled='true'></input>
+  <view  class='addsend'>
+  <button type='default' plain='true' form-type='submit' class='addsend'>发布公寓公告</button>
+  </view>
+</view>
+</form>

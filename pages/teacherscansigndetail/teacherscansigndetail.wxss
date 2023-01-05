@@ -1,0 +1,61 @@
+/* pages/teacherscansigndetail/teacherscansigndetail.wxss */
+page{
+  background: #f3f3f3;
+}
+.siginList{
+  margin: 40rpx 20rpx 2rpx 20rpx;
+  overflow: hidden;
+  font-size: 32rpx;
+  clear: both
+}
+.siginList text{
+  display: block
+}
+.siginTotal{
+  overflow: hidden;
+  margin-right: 40rpx;
+  margin-bottom: 40rpx;
+}
+.siginTotal label{
+  display: block;
+  float: right;
+  font-size: 35rpx;
+}
+.siginTotal text{
+  float: right;
+  color: red;
+  
+}
+.siginListTitle{
+  font-size: 34rpx;
+  text-align: center;
+  overflow: hidden;
+  clear: both;
+  margin-bottom: 20rpx;
+}
+.siginTime{
+  width: 200rpx;
+  float: left;
+}
+.siginAddress{
+  width: 340rpx;
+  float: left; 
+ 
+}
+.isSigin{
+  width: 140rpx;
+  float: left;
+}
+.isSigin2{
+  color: green;
+}
+.siginListItem{
+  text-align: center;
+  overflow: hidden;
+  clear: both;
+ 
+}
+.siginListItem text{
+  display: block;
+  overflow: hidden;
+}

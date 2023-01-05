@@ -1,0 +1,146 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"checkInvalidKey": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.6.6",
+	"appid": "wx94fdfc7686aa5dfa",
+	"projectname": "pro_test",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 4,
+			"list": [
+				{
+					"id": 0,
+					"name": "regist",
+					"pathName": "pages/register/register",
+					"query": "{nickName: \"mask\", gender: 1, language: \"zh_CN\", city: \"Chengdu\", province: \"Sichuan\", …}",
+					"scene": 1001
+				},
+				{
+					"id": 1,
+					"name": "leave",
+					"pathName": "pages/teacherscansign/teacherscansign",
+					"query": "{nickName: \"mask\", gender: 1, language: \"zh_CN\", city: \"Chengdu\", province: \"Sichuan\", …}",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "studentapply",
+					"pathName": "pages/studentapply/studentapply",
+					"query": "{nickName: \"mask\", gender: 1, language: \"zh_CN\", city: \"Chengdu\", province: \"Sichuan\", …}",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "housemastersend",
+					"pathName": "pages/housemastersend/housemastersend",
+					"query": "{nickName: \"mask\", gender: 1, language: \"zh_CN\", city: \"Chengdu\", province: \"Sichuan\", …}",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "teacherAsk",
+					"pathName": "pages/teacherscansign/teacherscansign",
+					"query": "{nickName: \"mask\", gender: 1, language: \"zh_CN\", city: \"Chengdu\", province: \"Sichuan\", …}",
+					"scene": null
+				},
+				{
+					"id": 5,
+					"name": "loginiN",
+					"pathName": "pages/login/login",
+					"query": "{nickName: \"mask\", gender: 1, language: \"zh_CN\", city: \"Chengdu\", province: \"Sichuan\", …}",
+					"scene": null
+				},
+				{
+					"id": 6,
+					"name": "more",
+					"pathName": "pages/usermatchfriend/usermatchfriend",
+					"query": "{nickName: \"mask\", gender: 1, language: \"zh_CN\", city: \"Chengdu\", province: \"Sichuan\", …}",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "applyOperation",
+					"pathName": "pages/studentapplyoperation/studentapplyoperation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 8,
+					"name": "HousermasterSendOperation",
+					"pathName": "pages/housemastersendoperation/housemastersendoperation",
+					"query": "{nickName: \"mask\", gender: 1, language: \"zh_CN\", city: \"Chengdu\", province: \"Sichuan\", …}",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "matchFriend",
+					"pathName": "pages/usermatchfriend/usermatchfriend",
+					"query": "{nickName: \"mask\", gender: 1, language: \"zh_CN\", city: \"Chengdu\", province: \"Sichuan\", …}",
+					"scene": null
+				},
+				{
+					"id": 10,
+					"name": "moredetail",
+					"pathName": "pages/userdetail/userdetail",
+					"query": "{nickName: \"mask\", gender: 1, language: \"zh_CN\", city: \"Chengdu\", province: \"Sichuan\", …}",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "moredetailopetation",
+					"pathName": "pages/userdetailoperation/userdetailoperation",
+					"query": "{nickName: \"mask\", gender: 1, language: \"zh_CN\", city: \"Chengdu\", province: \"Sichuan\", …}",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "friendmessage",
+					"pathName": "pages/usermatchfriendmessage/usermatchfriendmessage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "messagesend",
+					"pathName": "pages/usermatchfriendmessagesend/usermatchfriendmessagesend",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

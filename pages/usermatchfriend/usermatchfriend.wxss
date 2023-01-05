@@ -1,0 +1,128 @@
+/* pages/usermatchfriend/usermatchfriend.wxss */
+page{
+  background: black;
+  color: white;
+  font-size: 32rpx;
+
+}
+.matchfrend{
+  margin: 40rpx 20rpx 0 30rpx;
+}
+.matchtitle{
+  overflow: hidden;
+}
+.matchtitle text{
+  width: 150rpx;
+  text-align: center;
+}
+.matchtitle_lef{
+  font-size: 80rpx;
+  float: left;
+}
+.matchtitle_right{
+  float: right
+}
+.matchdegredd{
+  font-size: 180rpx;
+  font-family: Serif;
+  height: 220rpx;
+}
+.matchdegredd2{
+  font-size: 45rpx;
+  font-family: '楷体'
+}
+.matchname{
+  font-size: 31rpx;
+  margin-top:10rpx; 
+}
+/*公共叠加样式*/
+.style_top{
+  text-align: center;
+  border: 1rpx solid white;
+  margin-top: 60rpx;
+  margin-left:10rpx;  
+  background: black;
+  position: relative;
+  z-index: 1;
+}
+.style_bottom{
+  position: absolute;
+   left: -10rpx;
+   top: -10rpx;
+   text-align: center;
+  border: 1rpx solid white;
+  background: black;
+}
+.matchhabby{
+  width: 220rpx;
+  height: 110rpx;
+}
+.matchhabby3{
+ width: 220rpx;
+  height: 110rpx;  
+}
+.matchhabby1{
+  margin-top: 10rpx;
+  color: #aaa;
+  font-size: 29rpx;
+}
+.matchhabby text{
+  display: block;
+  margin-top: 10rpx;
+}
+.matchchat{
+  width: 420rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.matchchat1{
+   width: 420rpx;
+   height: 50rpx;
+  line-height: 50rpx;
+}
+.matcthcollege{
+  width: 270rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.matcthcollege1{
+   width: 270rpx;
+   height: 50rpx;
+  line-height: 50rpx;
+}
+
+.mathchdetail{
+  margin-top:20rpx; 
+}
+.detailitem{
+  overflow: hidden;
+  margin: 10rpx;
+}
+.matchimg{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  border: 50%;
+  background: white;
+  float: left;
+}
+.mathitem_attribute{
+  float: left;
+  margin-left:10rpx; 
+}
+.mathitem_attribute text{
+  display: block;
+  margin-top:10rpx; 
+}
+.adddetailitem1{
+  margin-left: 480rpx;
+}
+.adddetailitem2{
+  margin-left:240rpx; 
+}
+.matchsex1{
+  color: #aaa;
+}
+.matchsex2{
+  color: #f3f3f3;
+}

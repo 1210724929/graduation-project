@@ -1,0 +1,41 @@
+<!--pages/userdetailoperation/userdetailoperation.wxml-->
+<form bindsubmit='matchhabby' bindreset='reset'>
+  <view class='habbylist'>
+    <view class='habbylistitem'>
+      <label>兴趣：</label>
+      <input name="habby0" value='{{matchHabbyList.habby0}}'></input>
+    </view>
+
+     <view class='habbylistitem'>
+      <label>兴趣：</label>
+      <input name="habby1" value='{{matchHabbyList.habby1}}'></input>
+    </view>
+
+     <view class='habbylistitem'>
+      <label>兴趣：</label>
+      <input name="habby2" value='{{matchHabbyList.habby2}}'></input>
+    </view>
+
+     <view class='habbylistitem'>
+      <label>兴趣：</label>
+      <input name="habby3" value='{{matchHabbyList.habby3}}'></input>
+    </view>
+
+     <view class='habbylistitem'>
+      <label>兴趣：</label>
+      <input name="habby4" value='{{matchHabbyList.habby4}}'></input>
+    </view>
+
+     <view class='habbylistitem'>
+      <label>兴趣：</label>
+      <input name="habby5" value='{{matchHabbyList.habby5}}'></input>
+    </view>
+
+    <input name="studentId" value='{{userMatchId}}' class='userMatchId'></input>
+  </view>
+
+  <view class='habbysubmit'>
+    <button form-type="submit" type="primary" class='habbysubmit1'>完成</button>
+    <button>清空</button>
+  </view>
+</form>

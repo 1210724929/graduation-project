@@ -1,0 +1,101 @@
+<!--pages/teacherscansign/teacherscansign.wxml-->
+<view class='signCondition'>
+  <label class='signConditionLabel1'>今日签到情况：</label>
+  <label class='signConditionLabel2'>今日签到总人数 / 学生总数 ：</label>
+  <text class='signConditionText2'>{{studentTotal}}</text>
+  <text>/</text>
+  <text class='signConditionText1'>{{signInTotal}}</text>
+</view>
+
+<form bindsubmit='signInSelect'>
+  <view class='signSelect'>
+    <label class='signSelectLabel1'>查询条件:</label>
+    <view class='signSelectItem'>
+      <label>学院：</label>
+      <picker moder="selector" value='{{suseCollegeChoose}}' range-key="college" range='{{suseCollegeList}}' bindchange='collegeChoose'>
+          <input name="college" value='{{suseCollegeList[suseCollegeChoose].college}}'></input>
+      </picker>
+    </view>
+    <view class='signSelectItem'>
+      <label>专业：</label>
+       <picker moder="selector" value='{{suseMajorChoose}}'range-key="major" range='{{suseMajorList}}' bindchange='majorChoose'>
+          <input name="major"  value='{{suseMajorList[suseMajorChoose].major}}'></input>
+      </picker>
+    </view>
+    <view class='signSelectItem'>
+      <label>年级：</label>
+      <picker moder="selector" value='{{suseGradeChoose}}' range='{{suseGradeList}}' bindchange='gradeChoose'>
+          <input name="grade"  value='{{suseGradeList[suseGradeChoose]}}'></input>
+      </picker>
+    </view>
+    <view class='signSelectItem'>
+      <label>班级：</label>
+       <picker moder="selector" value='{{suseClassesChoose}}' range='{{suseClassesList}}' bindchange='classesChoose'>
+          <input name="classes"  value='{{suseClassesList[suseClassesChoose]}}'></input>
+      </picker>   
+       
+    </view>
+
+  <view class='selectBut'>
+      <button type='default' plain='true' form-type='submit' class='sendSelect'>查询</button>
+      </view>
+
+    <view class='signInSelectResult'>
+      <view class='signInSelectResultItme'>
+        <label class='signInSelectResultItmelabel'>实际人数：</label>
+        <text class='signInSelectResultItmetext signConditionText2'>{{studentByCondition}}</text>
+      </view>
+      <view class='signInSelectResultItme'>
+        <label class='signInSelectResultItmelabel'>今日签到：</label>
+        <text class='signInSelectResultItmetext signConditionText1'>{{signInByCondition}}</text>
+      </view>
+      
+    </view>
+  </view>
+</form>
+
+<view class='scanSignInDetail'>
+  <text class='signInDetail' bindtap='signInDetail'>点击查看所有学生签到详情>></text>
+</view>
+
+<view class='scan'>
+<block wx:if='{{onShow==1}}'>
+  <view class='scantitle'>
+    <text class='studentname'>学生姓名</text>
+    <text class='studentcollege'>学院</text>
+    <!-- <text class='studentmagor'>专业</text> -->
+    <text class='studentclass'>专业班级</text>
+    <text class='studentoperation'>操作</text>
+  </view>
+
+
+  <view class='scanlist'>
+    <block wx:for="{{studentList}}">
+      <view class='scanlisttiem'>
+        <text class='studentname'>{{item.name}}</text>
+        <text class='studentcollege'>{{item.college}}</text>
+        <!-- <text class='studentmagor'>{{item.magor}}</text> -->
+        <text class='studentclass'>{{item.grade}}.{{item.classes}}</text>
+        <view class='studentoperation'>
+          <text class='leaveagreen' bindtap='SignIndetail' data-number='{{item.number}}' data-index='{{index}}'>详情</text>
+
+
+          <text class='leavedetail' bindtap='SignIndetail' data-number='{{item.number}}' data-index='{{index}}'>今已签</text>
+        </view>
+
+        <!--参数传递-->
+        <!-- <navigator class='leavedetail'>详情</navigator> -->
+      </view>
+    </block>
+  </view>
+
+  </block>
+</view>
+<view class='scantype'>
+<image src='/image/apply.png' mode='scaleToFill' class='matchfriendimg'></image>
+  <text bindtap='teacherscanleave'>留校申请</text>
+  <image src='/image/apply.png' mode='scaleToFill' class='matchfriendimg'></image>
+  <text bindtap='teacherscanask'>请假申请</text>
+   <image src='/image/signin.png' mode='scaleToFill' class='matchfriendimg'></image>
+  <text bindtap='teacherscansign' class='selcetscantype'>签到查看</text>
+</view>

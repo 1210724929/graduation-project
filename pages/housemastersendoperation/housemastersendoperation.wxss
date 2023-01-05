@@ -1,0 +1,23 @@
+/* pages/housemastersendoperation/housemastersendoperation.wxss */
+.housesend{
+   font-size: 31rpx;
+   margin: 40rpx 30rpx 2rpx 30rpx;
+}
+.housermastersend{
+  width: 680rpx;
+   height: 400rpx;
+  border: 1rpx solid green;
+  padding: 10rpx;
+}
+.addsendid{
+  display: block;
+  width: 0;
+  float: left;
+}
+.addsend{
+  margin-top: 20rpx;
+float: right;
+ font-family: Georgia;
+ font-size: 32rpx;
+ border: none;
+}

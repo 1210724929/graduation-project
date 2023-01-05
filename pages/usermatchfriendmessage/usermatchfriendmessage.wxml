@@ -1,0 +1,50 @@
+<!--pages/usermatchfriendmessage/usermatchfriendmessage.wxml-->
+<view class='messagetitle'>
+ 
+  <text bindtap='userDetail'>← 我的消息</text>
+</view>
+<view class='message'>
+  <block wx:if="{{senddisplay==1}}">
+  <view class='messagebar'>
+    <text class='text1' bindtap='sendMessage'>私信</text>
+    <text bindtap='getMessage'>@我</text>
+    <text>通知</text>
+  </view>
+  </block>
+
+   <block wx:if="{{getdisplay==1}}">
+  <view class='messagebar'>
+    <text bindtap='sendMessage'>私信</text>
+    <text class='text1' bindtap='getMessage'>@我</text>
+    <text>通知</text>
+  </view>
+  </block>
+</view>
+
+<block wx:if="{{senddisplay==1}}">
+  <view class='makefriendsend'>
+    <view class='sendList'>
+    <block wx:for="{{sendMessageList}}">
+      <view class='sendItem'>
+        <image class='sendimg'></image>
+        <text>{{item.name}}</text>
+        <text>{{item.message}}</text>
+      </view>
+      </block>
+    </view>
+  </view>
+</block>
+
+<block wx:if="{{getdisplay==1}}">
+  <view class='makefriendsend'>
+    <view class='sendList'>
+    <block wx:for="{{getMessageList}}">
+      <view class='sendItem'>
+        <image class='sendimg'></image>
+        <text>{{item.name}}</text>
+        <text>{{item.message}}</text>
+      </view>
+    </block>
+    </view>
+  </view>
+</block>

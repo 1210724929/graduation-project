@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/more/more",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/userdetail/userdetail",
+    "pages/userdetailoperation/userdetailoperation",
+    "pages/usermatchfriend/usermatchfriend",
+    "pages/usermatchfriendmessage/usermatchfriendmessage",
+    "pages/usermatchfriendmessagesend/usermatchfriendmessagesend",
+    "pages/studentapply/studentapply",
+    "pages/studentapplyoperation/studentapplyoperation",
+    "pages/studentsend/studentsend",
+    "pages/studentsign/studentsign",
+    "pages/teacherscanleave/teacherscanleave",
+    "pages/teacherscanask/teacherscanask",
+    "pages/teacherscandetail/teacherscandetail",
+    "pages/teacherscansign/teacherscansign",
+    "pages/teacherscansigndetail/teacherscansigndetail",
+    "pages/housemastersend/housemastersend",
+    "pages/housemastersendoperation/housemastersendoperation"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#aaa",
+    "navigationBarTitleText": "大学生公寓管理",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "backgroundColor": "#f3f3f3",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/home.png"
+        
+      },
+      {
+        "pagePath": "pages/login/login",
+        "text": "登录",
+        "iconPath": "image/message.png"
+      }
+    ]
+  },
+  "debug": false,
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

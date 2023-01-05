@@ -1,0 +1,46 @@
+<!--pages/usermatchfriend/usermatchfriend.wxml-->
+<view class='matchfrend'>
+  <view class='matchtitle'>
+    <text class='matchtitle_letf' bindtap='matchFriend'>兴趣好友匹配</text>
+    <text class='matchtitle_right' bindtap='userDetail'>个人资料</text>
+  </view>
+
+  <view class='matchdegredd'>{{matchfrienddegree}}</view>
+  <view class='matchdegredd2'>爱好相似度</view>
+  <view class='matchname'>你 && {{matchfriendname}}</view>
+  <view class='matchhabby style_top'>
+    <view class='matchhabby3 style_bottom'>
+      <text class='matchhabby1'>Ta的兴趣有</text>
+      <text class='matchhabby2'>{{matchfriendhabby}}</text>
+    </view>
+
+
+  </view>
+
+  <view class='matchchat style_top'>
+    <view class='matchchat1 style_bottom' bindtap='matchMessageSend' data-number="{{matchfriendnumber}}"data-name="{{matchfriendname}}">聊一聊，说不定能交朋友噢</view>
+  </view>
+  <view class='matcthcollege style_top'>
+    <view class='matcthcollege1 style_bottom'>Ta就读{{matchfriendcollege}}</view>
+  </view>
+  <view class='matchlist'>
+    <view class='mathchitem'></view>
+    <view class='mathchdetail'>
+      <block wx:for="{{matchFriendList}}">
+        <view class='detailitem adddetailitem{{index+1}}' bindtap='choosefriend' data-index="{{index}}" data-number="{{number}}">
+          <image class='matchimg'></image>
+          <view class='mathitem_attribute'>
+            <text>{{item.name}}</text>
+            <block wx:if="{{item.sex==1}}">
+              <text class='matchsex1'>女生</text>
+            </block>
+            <block wx:elif="{{item.sex==0}}">
+              <text class='matchsex2'>男生</text>
+            </block>
+          </view>
+        </view>
+      </block>
+
+    </view>
+  </view>
+</view>

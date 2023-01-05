@@ -1,0 +1,67 @@
+/* pages/housemastersend/housemastersend.wxss */
+page{
+  background: #f3f3f3;
+}
+.apply{
+  margin: 40rpx 30rpx 2rpx 30rpx;
+  overflow: hidden;
+}
+.applylist{
+  margin-bottom:30rpx; 
+  overflow:hidden;
+}
+.applylisttitle{
+  overflow:hidden;
+  height: 60rpx;
+  font-size: 36rpx;
+  border-bottom: 1rpx solid #aaa;
+}
+.applyid{
+  display: block;
+  margin: 10rpx;
+  float: left;
+  color: #aaa;
+}
+.applytype{
+   display: block;
+   margin: 1rpx;
+   width: 80rpx;
+   float: right;
+}
+.applystate{
+  display: block;
+  font-size: 32rpx;
+   margin-top: 10rpx;
+   width: 120rpx;
+   line-height: 32rpx; 
+   float: right;
+}
+.applytext{
+  display: block;
+  margin: 20rpx 15rpx 10rpx 10rpx;
+  font-size: 31rpx;
+}
+.applyoperation{
+  overflow: hidden;
+  margin-right: 10rpx;
+  font-size: 30rpx;
+}
+.applytime{
+  display: block;
+  float:left;
+  color: #aaa;
+}
+.applyname{
+    display: block;
+  float: right;
+}
+.addsend{
+  position: fixed;
+  bottom: 10rpx;
+  margin-left: 500rpx;
+ font-family: Georgia;
+ font-size: 32rpx;
+}
+.addsend text{
+  display: block;
+}

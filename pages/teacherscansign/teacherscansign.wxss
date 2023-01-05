@@ -1,0 +1,192 @@
+/* pages/teacherscansign/teacherscansign.wxss */
+page{
+  background: #f6f6f6;
+}
+.signCondition{
+  height: 100rpx;
+  overflow: hidden;
+  margin: 20rpx;
+  
+}
+.signCondition label{
+  display: block;
+  font-size: 33rpx;
+  margin-bottom: 10rpx;
+}
+.signConditionLabel2{
+  float: left;
+}
+.signCondition text{
+  display: block;
+  float: right;
+  font-size: 32rpx;
+}
+.signConditionText1{
+  color: red
+}
+.signConditionText2{
+  color: green
+}
+
+
+.signSelect{
+  overflow: hidden;
+  margin: 20rpx;
+  font-size: 33rpx;
+  
+}
+.signSelect label{
+  display: block;
+  float: left;
+  margin-bottom: 20rpx;
+}
+.signSelect input{
+  display: block;
+  float: right;
+  padding-left: 10rpx;
+  border: 1rpx solid green;
+}
+.signSelectLabel1{
+  width: 100%;
+}
+.signSelectItem{
+  display: block;
+  overflow: hidden;
+  width:500rpx;
+}
+.signInSelectResult{
+  overflow: hidden;
+}
+.signInSelectResultItmelabel{
+  display: block;
+  font-size: 33rpx;
+  color: green
+}
+.signInSelectResultItmetext{
+  display: block;
+  font-size: 32rpx;
+}
+.signInSelectResultItme{
+ float: left;
+  width: 500rpx;
+  margin-top: 10rpx;
+}
+.sendSelect{
+  margin-top: 20rpx;
+  float: right;
+ font-family: Georgia;
+ font-size: 32rpx;
+ border: none;
+}
+.selectBut{
+  float: right;
+}
+
+.signInDetail{
+  display: block;
+  float: right;
+  font-size: 33rpx;
+  margin-top: 10rpx;
+}
+
+.scanSignInDetail{
+  height: 50rpx;
+  margin-top: 50rpx;
+  margin: 20rpx;
+  border-top:10rpx solid white;
+  
+}
+
+.scan {
+  font-size: 32rpx;
+  overflow: hidden;
+  margin: 30rpx 10rpx 0 10rpx;
+}
+
+text {
+  display: block;
+  float: left;
+}
+
+.scantitle {
+  overflow: hidden;
+}
+.scanlisttiem{
+  border-bottom: 1rpx solid #aaa;
+}
+.scantitle text {
+  font-size: 34rpx;
+  text-align: center;
+}
+
+.studentname {
+  width: 140rpx;
+}
+
+.studentcollege {
+  width: 250rpx;
+}
+
+.studentmagor {
+  width: 130rpx;
+}
+
+.studentclass {
+  width: 170rpx;
+}
+
+.studentoperation {
+  width: 170rpx;
+  text-align: center;
+  overflow: hidden;
+ 
+}
+
+.scanlisttiem text {
+  font-size: 32rpx;
+  text-align: center;
+  margin-top: 10rpx;
+}
+
+.leaveagreen {
+  display: block;
+  float: right;
+  width: 70rpx;
+  color: red;
+
+}
+
+.leavedetail {
+  display: block;
+  float: right;
+  width: 95rpx;
+  color: green;
+  
+}
+
+.scantype {
+  position: fixed;
+  bottom: 0;
+  height: 70rpx;
+  width: 100%;
+  padding-top: 20rpx;
+  padding-left: 40rpx;
+  background: #aaa;
+}
+.scantype text{
+  display: block;
+  width: 180rpx;
+  float: left;
+  text-align: center;
+  margin-right:20rpx;
+}
+.selcetscantype{
+  font-weight: bold;
+}
+.matchfriendimg{
+  display: block;
+  float: left;
+  padding-top:9rpx;
+  width: 34rpx;
+  height: 34rpx;
+}

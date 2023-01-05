@@ -1,0 +1,49 @@
+/* pages/usermatchfriendmessage/usermatchfriendmessage.wxss */
+page{
+  background: #f6f6f6;
+}
+.messagetitle{
+  margin: 20rpx;
+}
+.message{
+  margin: 20rpx;
+}
+.messagebar{
+  overflow: hidden;
+  border-bottom: 1rpx solid #f6f6f6;
+}
+.text1{
+  border-bottom: 1rpx solid black;
+}
+.messagebar text{
+  display: block;
+  float: left;
+  font-size: 32rpx;
+  margin-right: 150rpx;
+  margin-left:15rpx; 
+}
+.makefriendsend{
+  margin: 20rpx;
+}
+.sendList{
+  overflow: hidden;
+  font-size: 32rpx;
+}
+.sendItem{
+  margin-bottom: 10rpx;
+  border-bottom: solid 1rpx #f3f3f3;
+  height: 100rpx;
+}
+.sendItem text{
+  display: block;
+  margin-left:120rpx; 
+  margin-top:10rpx; 
+}
+.sendimg{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  border: 50%;
+  background: white;
+  float: left;
+}

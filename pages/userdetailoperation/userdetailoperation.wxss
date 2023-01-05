@@ -1,0 +1,42 @@
+/* pages/userdetailoperation/userdetailoperation.wxss */
+page{
+  background: #f3f3f3;
+}
+.habbylist{
+  font-size: 32rpx;
+  width: 500rpx;
+  margin: 50rpx auto;
+}
+.habbylistitem{
+  overflow: hidden;
+  margin: 10rpx;
+}
+.habbylistitem label{
+  display: block;
+  float: left;
+  padding-top: 20rpx;
+   height: 35rpx;
+  line-height: 35rpx;
+}
+.habbylistitem input{
+  border-bottom: 1rpx solid green;
+  height: 35rpx;
+  display: block;
+  float: left;
+  padding: 10rpx;
+}
+.habbysubmit{
+  overflow: hidden;
+   width: 500rpx;
+  margin:auto;
+}
+.habbysubmit button{
+  width:200rpx;
+  float: left;
+}
+.habbysubmit1{
+  margin-right:50rpx; 
+}
+/* .userMatchId{
+  width: 0;
+} */

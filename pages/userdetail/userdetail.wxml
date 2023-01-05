@@ -1,0 +1,91 @@
+<!--pages/userdetail/userdetail.wxml-->
+<view class='detail-body'>
+ <view class="userinfo">
+    <open-data type="userAvatarUrl" class="userinfo-avatar"></open-data>
+    <open-data type="userNickName" lang="zh_CN"></open-data>
+  </view>
+
+  <view class='detail'>
+    <view class='detail-user-left'>
+      <view class='user-item-left'   wx:for="{{userDetailItemList}}">
+         <label>{{item.name}}</label>
+      </view>
+    </view>
+    <view class='detail-user-right'>
+      <view class='user-item-right'>
+        <label>{{studentDetail.number}}</label>
+      </view>
+      <view class='user-item-right'>
+        <block wx:if="{{studentDetail.sex==0}}"><label>男</label></block>
+        <block wx:if="{{studentDetail.sex==1}}"><label>女</label></block>
+      </view>
+      <view class='user-item-right'>
+        <label>{{studentDetail.college}}</label>
+      </view>
+      <view class='user-item-right'>
+        <label>{{studentDetail.major}}</label>
+      </view>
+    </view>
+
+    <view class='detail-user-message'>
+      <image src='/image/matchmmessage.png' mode='scaleToFill' class='matchfriendimg'></image>
+      <label bindtap='userMessage'>我的信息</label>
+    </view>
+  </view>
+  <view class='fun-label'>
+      <label>兴趣爱好</label>
+      <view class='image-upload-input'>
+        <image src='/image/userinfo.png' mode='scaleToFill' class='matchfriendimg'></image>
+        <label bindtap='userdetailoperation'>编辑资料</label>
+      </view>
+  </view>
+  <view class='detail-fun'>
+    <view class='detail-user-fun'>
+      
+      <view class='user-fun'>
+        <label>{{matchHabbyList.habby0}}</label>
+      </view>
+
+       <view class='user-fun'>
+        <label>{{matchHabbyList.habby1}}</label>
+      </view>
+
+       <view class='user-fun'>
+        <label>{{matchHabbyList.habby2}}</label>
+      </view>
+
+       <view class='user-fun'>
+        <label>{{matchHabbyList.habby3}}</label>
+      </view>
+
+       <view class='user-fun'>
+        <label>{{matchHabbyList.habby4}}</label>
+      </view>
+
+       <view class='user-fun'>
+        <label>{{matchHabbyList.habby5}}</label>
+      </view>
+     
+    </view>
+  </view>
+
+   <view class='fun-label'>
+      <label>精选照片</label>
+      <view class='image-upload-input' bindtap='chooseImage'>
+       <image src='/image/update.png' mode='scaleToFill' class='matchfriendimg'></image>
+        <label>上传照片</label>
+      </view>
+  </view>
+  <view class='image-upload'>
+    <view class='image-upload-files'>
+      <block wx:for="{{imageList}}" wx:for-item="image">
+        <view class='image-upload-file'>
+          <image class='image-img'  src="{{image}}" mode='aspectFit' bindtap='previewImage'  data-src="{{image}}"></image>
+        </view>
+      </block>
+    </view>
+  </view>
+
+
+
+</view>
